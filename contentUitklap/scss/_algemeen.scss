@@ -1,0 +1,83 @@
+// Alle voorgemaakte variabelen in het bestand
+:root {
+  --kleur-primair: #ee3124;
+  --kleur-primair-licht: #fc4e41;
+  --kleur-primair-donker: #dc271a;
+
+  --kleur-secondair: #96bf3d;
+  // --kleur-secondair-licht:;
+  // --kleur-secondair-donker:;
+
+  --zwart: #000;
+  --zwart-alpha: rgba(0, 0, 0, 0.3);
+
+  --wit: #fff;
+
+  --schaduw-groen: 1rem 1rem 0rem var(--kleur-secondair);
+}
+
+// queries
+// breakpoints
+$huge: 77.5em; //1240px/16px
+$large: 52.5em; //840px/16px
+$bigger: 42.5em; //680px/16px
+$big: 34.375em; //550px/16px
+$mid: 26.25em; //420px/16px
+$small: 21.875em; //350px/16px
+
+// grid presets
+.grid-w--full {
+  grid-column: 1/-1;
+}
+.grid-w--c2 {
+  grid-column: span 2;
+  @media only screen and (max-width: $huge) {
+    grid-column: 1/-1;
+  }
+}
+.grid-w--c3 {
+  grid-column: span 3;
+  @media only screen and (max-width: $huge) {
+    grid-column: 1/-1;
+  }
+}
+.grid-w--c4 {
+  grid-column: span 4;
+  @media only screen and (max-width: $huge) {
+    grid-column: 1/-1;
+  }
+}
+.grid-w--c6 {
+  grid-column: span 6;
+  @media only screen and (max-width: $huge) {
+    grid-column: 1/-1;
+  }
+}
+.grid-w--c9 {
+  grid-column: span 9;
+  @media only screen and (max-width: $huge) {
+    grid-column: 1/-1;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  &,
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem is 10px = 10px/16px = 62.5
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "outfit", serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
